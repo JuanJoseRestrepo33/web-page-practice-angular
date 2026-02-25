@@ -12,15 +12,24 @@ export const CARDS_DATA: Card[] = [
     id: 1,
     title: 'Card 1',
     fullContent:
-      'Este es el texto completo que se muestra al hacer clic en la card. Puedes escribir todo el contenido que necesites aquí: párrafos largos, historias, descripciones detalladas, o cualquier información que quieras compartir con quien visite la página. El modal tiene scroll así que no hay límite de extensión. Reemplaza este texto con tu contenido real en src/app/data/cards.data.ts.',
+      'Este es el texto completo que se muestra al hacer clic en la card. Reemplaza con tu contenido en src/app/data/cards.data.ts.',
     imageUrl: 'assets/avatars/card1.png',
   },
   {
     id: 2,
-    title: 'Card 2',
-    fullContent:
-      'Descripción completa del card 2. Este texto puede ser tan largo como necesites. Cuando alguien toque la card en el dispositivo móvil o haga clic en desktop, verá todo este contenido en un modal cómodo de leer con scroll automático.',
-    imageUrl: 'https://i.pravatar.cc/256?u=2',
+    title: 'Abue Luz',
+    fullContent: `Nietis bella!!
+
+Siempre seré feliz de escribir alguna carta para ti 🥺 por que me encanta ver como has ido creciendo, ver cómo llegaste aquel FDS 72, donde te permitiste dejarte sorprender, nos dejaste conocer esa personita tan encantadora y ver hasta donde has llegado me llena de mucho orgullo y más por que pude vivir contigo momentos importantes en este recorrido de EJ 💛❤️
+
+Lo de ahora no es nada fácil, lo sé, pero así mismo sé que podrás con esto, lo has hecho muy bien y así seguirá siendo, por que si Dios te puso aquí es por qué eres capaz con esto y mucho más ❤️‍🔥
+
+Gracias de todo corazón por darlo todo por tu familia EJ, por permitir que llegue al corazón de muchas personas y por cambiar el mundo, empezando por nosotros mismos.
+
+Te mando muchos besos y abrazos
+
+Abue Luz`,
+    imageUrl: 'assets/avatars/abue-luz.png',
   },
   {
     id: 3,

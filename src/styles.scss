@@ -16,29 +16,6 @@
   --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-bg: #f8f7fc;
-    --color-bg-warm: #f5f3ff;
-    --color-surface: #ffffff;
-    --color-surface-elevated: #ffffff;
-    --color-text: #1a1820;
-    --color-muted: #6b6780;
-    --color-border: #e5e2ed;
-    --color-accent: #7c3aed;
-    --color-accent-muted: rgba(124, 58, 237, 0.35);
-    --color-accent-dark: #6d28d9;
-    --color-accent-soft: rgba(139, 92, 246, 0.1);
-    --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.06);
-    --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.1);
-  }
-
-  body {
-    background-image:
-      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(139, 92, 246, 0.04), transparent);
-  }
-}
-
 *,
 *::before,
 *::after {
