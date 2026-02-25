@@ -57,6 +57,18 @@ Aplicación Angular responsive para web y móvil, con página de cards interacti
 - **npm start**: inicia el servidor Express que sirve los archivos estáticos
 - El puerto lo asigna Heroku automáticamente (`process.env.PORT`)
 
+### Dominio personalizado
+
+Para usar tu propio dominio en lugar de `*.herokuapp.com`:
+
+1. En Heroku: Settings → Domains → **Add domain** (añade `www.tudominio.com` o `tudominio.com`)
+2. Heroku te mostrará un DNS target tipo `xxx.herokudns.com`
+3. En tu proveedor de dominios, crea un **CNAME** que apunte a ese target:
+   - Host: `www` (o `@` según tu proveedor)
+   - Valor: `skeletal-sailfish-xxx.herokudns.com` (el que te dio Heroku)
+
+Documentación oficial: [Custom Domain Names for Apps - Heroku Dev Center](https://devcenter.heroku.com/articles/custom-domains)
+
 ### Comandos útiles de Heroku
 
 | Comando                    | Descripción              |
@@ -64,6 +76,7 @@ Aplicación Angular responsive para web y móvil, con página de cards interacti
 | `heroku logs --tail`       | Ver logs en tiempo real  |
 | `heroku run bash`          | Abrir consola remota     |
 | `heroku ps:scale web=1`    | Asegurar un dyno activo  |
+| `heroku domains`           | Ver dominios y DNS target|
 
 ---
 
