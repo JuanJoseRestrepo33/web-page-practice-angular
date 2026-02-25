@@ -1,0 +1,112 @@
+<div class="page">
+  <header class="header">
+    <h1 class="header__title">Abuelita Karina</h1>
+    <button
+      class="header__photo"
+      type="button"
+      (click)="openAbuePopup()"
+      aria-label="Ver mensaje para Abuelita Karina"
+    >
+      <img src="assets/avatars/abuelita-karina.png" alt="Abuelita Karina" />
+    </button>
+  </header>
+
+  <main class="cards-container">
+    @for (card of cards; track card.id) {
+      <article
+        class="card"
+        (click)="openModal(card)"
+        (keydown.enter)="openModal(card)"
+        (keydown.space)="openModal(card); $event.preventDefault()"
+        tabindex="0"
+        role="button"
+      >
+        <div class="card__avatar-wrap">
+          <div class="card__avatar">
+            @if (card.imageUrl) {
+              <img
+                [src]="card.imageUrl"
+                [alt]="card.title"
+                class="card__avatar-img"
+              />
+            } @else if (card.icon) {
+              <span class="card__avatar-icon" aria-hidden="true">{{ card.icon }}</span>
+            }
+          </div>
+          @if (card.badgeUrl) {
+            <img
+              [src]="card.badgeUrl"
+              alt=""
+              class="card__avatar-badge"
+              aria-hidden="true"
+            />
+          }
+        </div>
+        <h2 class="card__title">{{ card.title }}</h2>
+        <p class="card__hint">Toca para ver más</p>
+      </article>
+    }
+  </main>
+
+  <footer class="footer">
+    <p>© {{ currentYear }} — Diseñado para web y móvil</p>
+  </footer>
+</div>
+
+@if (showAbuePopup) {
+  <div
+    class="modal-overlay"
+    (click)="closeAbuePopup()"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="abue-modal-title"
+  >
+    <div class="modal modal--abue" (click)="$event.stopPropagation()">
+      <div class="modal__header">
+        <h2 id="abue-modal-title" class="modal__title">Para Abuelita Karina</h2>
+        <button
+          class="modal__close"
+          (click)="closeAbuePopup()"
+          type="button"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+      </div>
+      <div class="modal__body">
+        <p class="modal__content modal__content--abue">
+          Te queremos mucho Abue Karina, gracias por ser tan bonita con nosotros y especial.
+        </p>
+      </div>
+    </div>
+  </div>
+}
+
+@if (selectedCard) {
+  <div
+    class="modal-overlay"
+    (click)="closeModal()"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <div class="modal" (click)="$event.stopPropagation()">
+      <div class="modal__header">
+        <h2 id="modal-title" class="modal__title">{{ selectedCard.title }}</h2>
+        <button
+          class="modal__close"
+          (click)="closeModal()"
+          type="button"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+      </div>
+      <div class="modal__body">
+        <p class="modal__content">{{ selectedCard.fullContent }}</p>
+      </div>
+    </div>
+  </div>
+}
+
+<router-outlet />
