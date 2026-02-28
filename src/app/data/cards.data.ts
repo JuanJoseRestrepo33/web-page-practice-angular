@@ -10,9 +10,8 @@ import { Card } from '../models/card.model';
 export const CARDS_DATA: Card[] = [
   {
     id: 1,
-    title: 'Card 1',
-    fullContent:
-      'Este es el texto completo que se muestra al hacer clic en la card. Reemplaza con tu contenido en src/app/data/cards.data.ts.',
+    title: 'Juan Jose',
+    fullContent: `Ti la verdad es primera vez que hago este detalle a alguien, no se de donde saque la inspiracion pero siempre quize hacer algo bonito por alguien, y Dios me dio la inspiracion, a pesar de que no compartamos mucho, yo soy una persona que observa mucho a las personas y siempre que te veo en los eventos y asi, se que eres una persona muy reservada y muy cuidadosa con lo que dices, aparte de pila (Eso siempre lo he notado), igualmente quiero seguir conociendote y que me permitas conocerte. Con mucho amor BoniJeyJey`,
     imageUrl: 'assets/avatars/card1.png',
   },
   {
@@ -33,30 +32,67 @@ Abue Luz`,
   },
   {
     id: 3,
-    title: 'Card 3',
-    fullContent:
-      'Texto completo de la card 3. Aquí puedes incluir biografías, artículos, narraciones o cualquier contenido extenso.',
-    imageUrl: 'https://i.pravatar.cc/256?u=3',
+    title: 'Daniela R.',
+    fullContent: `Kariiiii
+
+Hola mamita Kari espero que estés súper bien y que este fin de semana no hagas estado taaaan metida en la cocina y te dejes ver, ole deberíamos ir a comer sushi otra vez para reunir la familia hace rato que no los veo :c.
+
+Te felicito porque yo creo que ya te gradualmente o estas ya apuntito hace tanto que no hablamos que ya no se si la especialidad era un año o dos jajajaja ay Dios, espero se hayan divertido y que todo haya salido espectacularmente en este taller nos vemos prontito espero.
+
+Te mando un abrazo.
+
+Con cariño,
+Daniela R.`,
+    imageUrl: 'assets/avatars/daniela-r.png',
   },
   {
     id: 4,
-    title: 'Card 4',
-    fullContent:
-      'Contenido de la card 4. Reemplaza con tu texto. Puedes usar saltos de línea si lo necesitas en el futuro.',
-    icon: '►',
+    title: 'David Aristizabal',
+    fullContent: `Abuelita Kari,
+
+Hoy quiero escribirle con el corazón en la mano. A veces uno da por sentado muchas cosas, pero yo no quiero que pase más tiempo sin decirle lo agradecido que estoy con usted.
+
+Gracias por su liderazgo. No es un liderazgo de palabras bonitas, sino de ejemplo. Usted no necesita imponerse para que la respeten; su carácter, su coherencia y su firmeza hablan por sí solos. He aprendido que dirigir no es mandar, sino sostener, orientar y mantenerse firme cuando otros dudan. Y eso usted lo hace con una naturalidad admirable.
+
+Gracias también por su carácter. Porque en los momentos difíciles usted no se esconde, no se quiebra, no abandona. Se mantiene de pie. Y esa fortaleza ha sido guía para todos nosotros. Usted ha sabido llevar las cosas con sabiduría, con paciencia cuando se necesita, y con determinación cuando toca tomar decisiones.
+
+Yo valoro profundamente todo lo que ha construido y la manera en que ha sabido liderar cada proceso, cada situación y cada reto. Su ejemplo me ha enseñado más de lo que quizá imagina. Me ha enseñado responsabilidad, compromiso y, sobre todo, amor por lo que se hace.
+
+Gracias por ser referente, por abrir camino y por demostrar que el carácter y los principios siempre deben estar por encima de cualquier circunstancia.`,
+    imageUrl: 'assets/avatars/trophy-man.png',
   },
   {
     id: 5,
-    title: 'Card 5',
-    fullContent:
-      'Texto completo del card 5. Edita fullContent en cada objeto del array para personalizar lo que se muestra al hacer clic.',
-    imageUrl: 'https://i.pravatar.cc/256?u=5',
+    title: 'Juan David',
+    fullContent: `Licenciada Karina el dia de hoy o la noche o lo que sea que sea el momento en el que estes leyendo esta carta te quiero decir muchas cosas: muchas cosas, muchas gracias ❤️, jijiji no mentiras mka pues ajá besos y abrazos gossip girl 💋. Bueno ahora si pues bb te quiero decir que eres muy bella y graciosa, que has sido una linda amistad que poquito a poquito a ido formandose de forma bonita, me hacia falta una amiga abogada y especialista en tributario para que algún día me ayude a desfalcar a la DIAN JIJIJIII que tengas una hermosa semana y sigue siendo Karina que te queda lindo, ahora si besos y abrazos, chica indiscreta.
+Juan David ❤️`,
+    imageUrl: 'assets/avatars/juan-david.png',
   },
   {
     id: 6,
-    title: 'Card 6',
-    fullContent:
-      'Contenido de la card 6. El modal se cierra tocando fuera, con el botón × o con la tecla Escape.',
-    icon: '✦',
+    title: 'Para Andrea',
+    fullContent: `Holaaaaa!
+Carta número 20 para Andrea.
+
+Léeme cuando ya me hayas perdonado:
+
+Espero tus días sean mucho más tranquilos, creyendo en ti y en todas las capacidades que tienes! Eres grande, llena de amor y valentía.
+Que la vida y el amor siempre hagan parte de ti aunque quieras matar gente.
+Besito.
+Love U`,
+    imageUrl: 'assets/avatars/carta-andrea.png',
+  },
+  {
+    id: 7,
+    title: 'Val Arias',
+    fullContent: `Tía Kari,
+
+Quiero agradecerte profundamente por tu ternura y por la entrega tan genuina que le das al movimiento. Tu forma de servir, de acompañar y de estar presente es un regalo para todos nosotros. Se siente el amor en cada gesto y en cada palabra.
+
+Gracias por ser guía, apoyo e inspiración. Tu ejemplo deja huella en mi corazón 💖
+
+Con amor y mucha pizza,
+Val Arias`,
+    imageUrl: 'assets/avatars/val-arias.png',
   },
 ];
