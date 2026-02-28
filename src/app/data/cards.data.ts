@@ -70,7 +70,7 @@ Juan David ❤️`,
   },
   {
     id: 6,
-    title: 'Para Andrea',
+    title: 'Tania Giraldo',
     fullContent: `Holaaaaa!
 Carta número 20 para Andrea.
 
