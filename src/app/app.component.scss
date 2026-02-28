@@ -19,6 +19,12 @@
     letter-spacing: -0.02em;
   }
 
+  &__hint {
+    font-size: 0.9rem;
+    color: var(--color-muted);
+    margin: 1rem 0 0;
+  }
+
   &__photo {
     margin: 0 auto;
     width: min(280px, 75vw);
@@ -42,6 +48,12 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  &__subtitle {
+    margin: 1rem 0 0;
+    font-size: 0.9rem;
+    color: var(--color-muted);
   }
 }
 
